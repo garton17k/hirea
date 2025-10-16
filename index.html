@@ -8,7 +8,7 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
     <link rel="preload" href="Images/hire-a-hacker.png" as="image">
     
-    <!-- Google Fonts -->xq
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Bootstrap 5 -->
@@ -1089,6 +1089,134 @@
             color: var(--success-color);
             margin-right: 0.5rem;
         }
+
+        /* Comments Section Styles */
+        .comments-section {
+            padding: 4rem 0;
+            background: var(--bg-secondary);
+        }
+
+        .comments-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .comment {
+            background: var(--bg-primary);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .comment:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .comment-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .comment-avatar {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+            flex-shrink: 0;
+        }
+
+        .comment-info {
+            margin-left: 1rem;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .comment-date {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .comment-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.9375rem;
+        }
+
+        .comment-reply {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--primary-color);
+            background: var(--bg-tertiary);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .staff-badge {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .comment-form {
+            background: var(--bg-primary);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .comment-form h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .comment-rating {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: var(--success-color);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-left: 0.5rem;
+        }
     </style>
 </head>
 <!--Start of Tawk.to Script-->
@@ -1146,6 +1274,8 @@ s0.parentNode.insertBefore(s1,s0);
             </a>
             
             <div class="nav-buttons">
+                <button onclick="location.href='/infidelity-investigation.html'">Catch Cheating Spouse</button>
+                <button onclick="location.href='/spyware-monitoring.html'">Spyware</button>
                 <button onclick="location.href='/pig-butchering-scam.html'">Butchering</button>
                 <button onclick="location.href='/ponzi.html'">Ponzi Recovery</button>
             </div>
@@ -1246,12 +1376,38 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
     </section>
 
+    <!-- Featured Services Banner -->
+    <section style="background: var(--bg-secondary); padding: 3rem 0;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100" style="border-left: 4px solid var(--primary-color);">
+                        <div class="card-body">
+                            <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Catching Cheating Spouse</h3>
+                            <p class="card-text">Professional infidelity investigation services. Uncover the truth about spouse cheating with digital forensics, phone monitoring, and surveillance. Discreet, legal, and results in 3-7 days.</p>
+                            <a href="/infidelity-investigation.html" class="btn btn-primary" style="display: inline-block; text-decoration: none; margin-top: 1rem;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100" style="border-left: 4px solid var(--success-color);">
+                        <div class="card-body">
+                            <h3 style="color: var(--success-color); margin-bottom: 1rem;">Professional Spyware Solutions</h3>
+                            <p class="card-text">Remote monitoring and device security services for parental control, employee oversight, and personal safety. Legal installation with 24/7 support and complete discretion.</p>
+                            <a href="/spyware-monitoring.html" class="btn btn-primary" style="display: inline-block; text-decoration: none; margin-top: 1rem; background: linear-gradient(135deg, var(--success-color) 0%, #059669 100%);">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="section-padding">
         <div class="container">
             <h2 class="section-title text-gradient">Professional Hacking Services</h2>
             <p class="section-subtitle">We provide comprehensive ethical hacking solutions for individuals and businesses worldwide. All services are performed legally and confidentially by certified professionals.</p>
-            
+
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="service-card loading">
@@ -1435,6 +1591,533 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
     </section>
 
+  
+
+    <!-- Contact Form Section -->
+  
+
+    <!-- Emergency Contact -->
+    <section class="section-padding" style="background: var(--bg-dark); color: white;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-4">🚨 Need Immediate Assistance?</h2>
+                    <p class="lead mb-4">For urgent hacking services or emergency cybersecurity support, contact us directly via WhatsApp for immediate response from our certified ethical hackers.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
+                                <div class="card-body">
+                                    <h5 style="color: var(--accent-color);">📱 WhatsApp</h5>
+                                    <p class="h4" style="color: white;">+44 7355 835912</p>
+                                    <small style="color: rgba(255,255,255,0.8);">Available 24/7 for Emergency Support</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section">
+      <div class="container">
+        <h2>Client Questions & Hacker Hiring Experiences</h2>
+        <p class="section-subtitle">Real feedback from clients who have used our ethical hacking services</p>
+
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">MT</div>
+                <div class="comment-info">
+                  <div class="comment-author">
+                    Michael Turner
+                    <span class="verified-badge">
+                      <i data-lucide="shield-check" width="12" height="12"></i>
+                      Verified Client
+                    </span>
+                  </div>
+                  <div class="comment-date">January 22, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                Has anyone actually used this service to recover deleted WhatsApp messages? I need evidence for a case but not sure if this is real.
+              </div>
+              <div class="comment-reply">
+                <span class="staff-badge">ANDY - STAFF</span>
+                <div class="comment-text">
+                  Yes Michael — WhatsApp recovery is one of the most common requests we get. It depends on how long ago the messages were deleted and if backups exist. Please reach out on WhatsApp for verification before proceeding.
+                </div>
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">SR</div>
+                <div class="comment-info">
+                  <div class="comment-author">Sophia Reyes</div>
+                  <div class="comment-date">February 5, 2024</div>
+                </div>
+              </div>
+              <div class="comment-text">
+                Can hackers really find out who my boyfriend is texting on Telegram? He's been acting weird for months.
+              </div>
+              <div class="comment-reply">
+                <span class="staff-badge">ANDY - STAFF</span>
+                <div class="comment-text">
+                  Sophia, yes we can help with Telegram monitoring for legitimate purposes. This requires legal authorization and consent depending on your jurisdiction. Contact us on WhatsApp +44 7355 835912 to discuss your specific situation confidentially.
+                </div>
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">DL</div>
+                <div class="comment-info">
+                  <div class="comment-author">
+                    Daniel Lee
+                    <span class="verified-badge">
+                      <i data-lucide="shield-check" width="12" height="12"></i>
+                      Verified Client
+                    </span>
+                  </div>
+                  <div class="comment-date">March 18, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                I hired a hacker through here last year to recover my business Instagram after it got taken over. It took 2 days but I got it back — legit service.
+              </div>
+              <div class="comment-reply">
+                <span class="staff-badge">ANDY - STAFF</span>
+                <div class="comment-text">
+                  Daniel, thanks for confirming your case. We're glad your recovery was successful — that's exactly the type of work we prioritize. Appreciate your feedback!
+                </div>
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">JM</div>
+                <div class="comment-info">
+                  <div class="comment-author">
+                    Jessica Martinez
+                    <span class="verified-badge">
+                      <i data-lucide="shield-check" width="12" height="12"></i>
+                      Verified Client
+                    </span>
+                  </div>
+                  <div class="comment-date">March 25, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                Needed urgent help recovering my locked iPhone with important business data. Andy's team got it done in less than 48 hours. Professional, discreet, and worth every penny. Highly recommend for anyone in a similar situation.
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">LC</div>
+                <div class="comment-info">
+                  <div class="comment-author">Laura Chen</div>
+                  <div class="comment-date">April 10, 2024</div>
+                </div>
+              </div>
+              <div class="comment-text">
+                I just want to know if it's possible to track deleted Snapchat messages. My ex was sending stuff he shouldn't and then deleted everything.
+              </div>
+              <div class="comment-reply">
+                <span class="staff-badge">ANDY - STAFF</span>
+                <div class="comment-text">
+                  Laura, Snapchat recovery is challenging due to their security protocols, but depending on the device and timeframe, there may be options. We'll need to assess your specific case. Please contact us directly on WhatsApp to discuss the details confidentially.
+                </div>
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">TP</div>
+                <div class="comment-info">
+                  <div class="comment-author">
+                    Thomas Parker
+                    <span class="verified-badge">
+                      <i data-lucide="shield-check" width="12" height="12"></i>
+                      Verified Client
+                    </span>
+                  </div>
+                  <div class="comment-date">April 28, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                Used this service to investigate potential employee fraud. The digital forensics team was thorough and professional. They recovered deleted emails and provided a detailed report that held up in our legal proceedings. Couldn't be happier with the outcome.
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">RB</div>
+                <div class="comment-info">
+                  <div class="comment-author">Ryan Brooks</div>
+                  <div class="comment-date">May 2, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                Tried contacting Andy last week about tracing stolen crypto. Got a reply within an hour and they guided me through the process. Still waiting for updates but so far communication has been solid.
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">NK</div>
+                <div class="comment-info">
+                  <div class="comment-author">
+                    Nina Kowalski
+                    <span class="verified-badge">
+                      <i data-lucide="shield-check" width="12" height="12"></i>
+                      Verified Client
+                    </span>
+                  </div>
+                  <div class="comment-date">May 15, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                My Gmail account was hacked and the person changed everything - password, recovery email, phone number. I thought I lost years of important emails and contacts. Andy recovered everything in 3 days. Amazing service!
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">AM</div>
+                <div class="comment-info">
+                  <div class="comment-author">Alex Morgan</div>
+                  <div class="comment-date">June 8, 2024</div>
+                </div>
+              </div>
+              <div class="comment-text">
+                Does this work for Facebook Messenger too? Need to recover some old conversations from 2022 that were deleted.
+              </div>
+              <div class="comment-reply">
+                <span class="staff-badge">ANDY - STAFF</span>
+                <div class="comment-text">
+                  Alex, yes we handle Facebook Messenger recovery. The success rate depends on whether the messages were archived, backed up, or permanently deleted. We have several methods to attempt recovery. Reach out on WhatsApp +44 7355 835912 and we can evaluate your case for free.
+                </div>
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">KW</div>
+                <div class="comment-info">
+                  <div class="comment-author">
+                    Kevin Williams
+                    <span class="verified-badge">
+                      <i data-lucide="shield-check" width="12" height="12"></i>
+                      Verified Client
+                    </span>
+                  </div>
+                  <div class="comment-date">July 3, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                Hired them for a private investigation into my business partner's activities. The evidence they uncovered was comprehensive and presented in a professional manner. Saved my business from a major lawsuit. These guys know what they're doing.
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">EP</div>
+                <div class="comment-info">
+                  <div class="comment-author">Emily Patterson</div>
+                  <div class="comment-date">August 12, 2024</div>
+                </div>
+              </div>
+              <div class="comment-text">
+                What's the average turnaround time for iPhone hacking services? Is it really as fast as some people say?
+              </div>
+              <div class="comment-reply">
+                <span class="staff-badge">ANDY - STAFF</span>
+                <div class="comment-text">
+                  Emily, turnaround time varies based on the iPhone model, iOS version, and complexity of the request. Simple data extraction typically takes 24-48 hours. More complex cases involving security bypasses may take 3-7 days. We always provide an estimated timeline upfront after assessing your specific situation.
+                </div>
+              </div>
+            </div>
+
+            <div class="comment">
+              <div class="comment-header">
+                <div class="comment-avatar">CS</div>
+                <div class="comment-info">
+                  <div class="comment-author">
+                    Carlos Silva
+                    <span class="verified-badge">
+                      <i data-lucide="shield-check" width="12" height="12"></i>
+                      Verified Client
+                    </span>
+                  </div>
+                  <div class="comment-date">September 5, 2024</div>
+                </div>
+              </div>
+              <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+              <div class="comment-text">
+                Skeptical at first but desperate to recover my Twitter account after a hijack. They delivered exactly what they promised. Account fully recovered with all my followers intact. Payment was secure through escrow which gave me peace of mind. Legit operation.
+              </div>
+            </div>
+			
+			<div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#333;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">AJ</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Aaron Jacobs</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">May 14, 2022</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Hired for account recovery after a social media takeover. They restored access and secured the account with step-by-step remediation. Recommended for businesses.
+			    </div>
+			    <div class="comment-reply" style="margin-top:10px;padding-left:20px;border-left:2px solid #ccc;">
+			      <span class="staff-badge" style="background:#222;color:#fff;padding:3px 8px;border-radius:5px;font-size:0.8rem;">ANDY - STAFF</span>
+			      <div class="comment-text" style="margin-top:5px;">
+			        Aaron — glad we could help. For account takeovers we also provide hardening guidance so it doesn't happen again.
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#5a3;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">NR</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Nora Reyes</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">August 2, 2022</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Is hiring a hacker here safe and legal? I need someone to recover evidence for a custody case and want everything court-admissible.
+			    </div>
+			    <div class="comment-reply" style="margin-top:10px;padding-left:20px;border-left:2px solid #ccc;">
+			      <span class="staff-badge" style="background:#222;color:#fff;padding:3px 8px;border-radius:5px;font-size:0.8rem;">ANDY - STAFF</span>
+			      <div class="comment-text" style="margin-top:5px;">
+			        Nora — yes. We provide written scopes, documented chain-of-custody, and strictly legal evidence collection. We work with attorneys to ensure admissibility.
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#247;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">RJ</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Rita Johnson</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">November 9, 2022</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      We hired them to trace a scammer who used our company logo. They produced a cross-platform report and DMCA takedown support — removed fake sites within a week.
+			    </div>
+			    <div class="comment-reply" style="margin-top:10px;padding-left:20px;border-left:2px solid #ccc;">
+			      <span class="staff-badge" style="background:#222;color:#fff;padding:3px 8px;border-radius:5px;font-size:0.8rem;">ANDY - STAFF</span>
+			      <div class="comment-text" style="margin-top:5px;">
+			        Rita — thanks for the update. Brand protection with rapid takedown coordination is a core service for businesses.
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#b44;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">KM</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Kevin Mills</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">February 17, 2023</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Looking for a discreet background check on a contractor — need criminal history and online footprint. What’s your turnaround time?
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#7a5;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">SC</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Samantha Cruz</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">May 5, 2023</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Can you provide proof-of-capability before I pay? I need to know this isn’t a scam.
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#2d6;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">PT</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Peter Tran</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">September 8, 2023</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Hired them for phone forensics after suspected fraud. They preserved evidence and provided a report our lawyer used. Very professional.
+			    </div>
+			    <div class="comment-reply" style="margin-top:10px;padding-left:20px;border-left:2px solid #ccc;">
+			      <span class="staff-badge" style="background:#222;color:#fff;padding:3px 8px;border-radius:5px;font-size:0.8rem;">ANDY - STAFF</span>
+			      <div class="comment-text" style="margin-top:5px;">
+			        Peter — quick preservation is crucial. Glad the report helped your legal team.
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#8b3;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">ML</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Maya Lopez</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">January 3, 2024</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Will you work with law enforcement if a criminal case opens up after your investigation?
+			    </div>
+			    <div class="comment-reply" style="margin-top:10px;padding-left:20px;border-left:2px solid #ccc;">
+			      <span class="staff-badge" style="background:#222;color:#fff;padding:3px 8px;border-radius:5px;font-size:0.8rem;">ANDY - STAFF</span>
+			      <div class="comment-text" style="margin-top:5px;">
+			        Maya — yes. We cooperate with legal authorities when cases require escalation and when our client authorizes disclosure.
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#c12;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">RB</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Riley Barnes</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">June 20, 2024</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Need help retrieving logs from a compromised server. Are your methods safe for corporate clients and documented for audits?
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#224;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">ZD</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Zara Dhali</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">October 2, 2024</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      Curious — what does a standard engagement look like? Deposit, milestone payments, and final handoff of findings?
+			    </div>
+			  </div>
+
+			  <div class="comment" style="margin-top:25px;">
+			    <div class="comment-header">
+			      <div class="comment-avatar" style="background:#4b5;color:#fff;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:bold;">AC</div>
+			      <div class="comment-info" style="margin-left:10px;">
+			        <div class="comment-author">Alice Chapman</div>
+			        <div class="comment-date" style="font-size:0.9rem;color:#888;">December 20, 2024</div>
+			      </div>
+			    </div>
+			    <div class="comment-text" style="margin-top:10px;">
+			      We engaged for a brand impersonation takedown. They coordinated with registrars and removed a dozen scam pages. Documentation was solid.
+			    </div>
+			    <div class="comment-reply" style="margin-top:10px;padding-left:20px;border-left:2px solid #ccc;">
+			      <span class="staff-badge" style="background:#222;color:#fff;padding:3px 8px;border-radius:5px;font-size:0.8rem;">ANDY - STAFF</span>
+			      <div class="comment-text" style="margin-top:5px;">
+			        Alice — happy to hear the takedown was effective. We bundle registrar actions with legal templates for faster results.
+			      </div>
+			    </div>
+			  </div>
+			
+
+            <div class="comment-form">
+              <h3>Ask a Question or Share Your Experience</h3>
+			  <form action="https://formcarry.com/s/5zQ6X2hYLyA" method="POST" enctype="multipart/form-data" id="contactForm">
+			                      <div class="row">
+			                          <div class="col-md-6">
+			                              <div class="form-group">
+			                                  <label for="name">Full Name *</label>
+			                                  <input type="text" class="form-control" id="name" name="name" required>
+			                              </div>
+			                          </div>
+			                          <div class="col-md-6">
+			                              <div class="form-group">
+			                                  <label for="email">Email Address *</label>
+			                                  <input type="email" class="form-control" id="email" name="email" required>
+			                              </div>
+			                          </div>
+			                      </div>
+                    
+			                      <div class="row">
+			                          <div class="col-md-6">
+			                              <div class="form-group">
+			                                  <label for="phone">Phone Number</label>
+			                                  <input type="tel" class="form-control" id="phone" name="phone">
+			                              </div>
+			                          </div>
+			                          <div class="col-md-6">
+			                              <div class="form-group">
+			                                  <label for="country">Country</label>
+			                                  <select class="form-control" id="country" name="country" required>
+			                                      <option value="">Select your country</option>
+			                                      <option value="us">United States</option>
+			                                      <option value="uk">United Kingdom</option>
+			                                      <option value="ca">Canada</option>
+			                                      <option value="au">Australia</option>
+			                                      <option value="de">Germany</option>
+			                                      <option value="fr">France</option>
+			                                      <option value="other">Other</option>
+			                                  </select>
+			                              </div>
+			                          </div>
+			                      </div>
+                    
+			                      <div class="form-group">
+			                          <label for="service">Service</label>
+			                          <select class="form-control" id="service" name="service">
+			                              <option value="">Select a service</option>
+			                              <option value="iphone-hacking">iPhone Hacking</option>
+			                              <option value="whatsapp-hacking">WhatsApp Hacking</option>
+			                              <option value="social-media-recovery">Social Media Recovery</option>
+			                              <option value="email-recovery">Email Recovery</option>
+			                              <option value="private-investigation">Private Investigation</option>
+			                              <option value="cybersecurity">Cybersecurity</option>
+			                              <option value="other">Other</option>
+			                          </select>
+			                      </div>
+                    
+			                      <div class="form-group">
+			                          <label for="description">Submit</label>
+			                          <textarea class="form-control" id="description" name="description" rows="5" required placeholder="Please provide details about your request....."></textarea>
+			                      </div>
+                    
+			                      <div class="form-group">
+			                          <input type="hidden" name="subject" value="Professional Hacking Service Request">
+			                          <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you">
+			                          <button type="submit" class="btn btn-primary w-100">
+			                              <i data-lucide="send" class="me-2"></i>
+			                              Submit Request
+			                          </button>
+			                      </div>
+			                  </form>
+              <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                Comments are reviewed before publishing. For urgent help, contact Andy directly on WhatsApp: +44 7355 835912
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Comments Section -->
+	
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
@@ -1488,149 +2171,6 @@ s0.parentNode.insertBefore(s1,s0);
                         </button>
                         <div class="faq-answer">
                             <p>Yes, we offer comprehensive private investigation services including digital forensics, background checks, infidelity investigations, and fraud detection. All investigations are conducted legally and discreetly.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonial-section">
-        <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial">
-                        <div class="testimonial-rating">
-                            ⭐⭐⭐⭐⭐
-                        </div>
-                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sarah Johnson">
-                        <p class="testimonial-text">"Professional and discreet service. They helped me recover my compromised social media accounts quickly and securely. The ethical hacker assigned to my case was incredibly knowledgeable and kept me informed throughout the process."</p>
-                        <h5 class="testimonial-author">Sarah Johnson</h5>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial">
-                        <div class="testimonial-rating">
-                            ⭐⭐⭐⭐⭐
-                        </div>
-                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Michael Chen">
-                        <p class="testimonial-text">"Excellent iPhone hacking service for parental monitoring. The team was professional, legal, and provided exactly what I needed to ensure my children's online safety. Highly recommend their services."</p>
-                        <h5 class="testimonial-author">Michael Chen</h5>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial">
-                        <div class="testimonial-rating">
-                            ⭐⭐⭐⭐⭐
-                        </div>
-                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Emma Rodriguez">
-                        <p class="testimonial-text">"Their private investigation services helped me uncover the truth I needed. The combination of ethical hacking and traditional investigation techniques was impressive. Completely confidential and professional throughout."</p>
-                        <h5 class="testimonial-author">Emma Rodriguez</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="form-section">
-        <div class="container">
-            <h2 class="section-title">Get Professional Hacking Services</h2>
-            <p class="section-subtitle">Ready to hire a hacker? Fill out the form below and our team will contact you within 24 hours for a free consultation and personalized quote.</p>
-            
-            <div class="form-container">
-<form action="https://formcarry.com/s/5zQ6X2hYLyA" method="POST" enctype="multipart/form-data" id="contactForm">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" name="phone">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="country">Country</label>
-                                <select class="form-control" id="country" name="country" required>
-                                    <option value="">Select your country</option>
-                                    <option value="us">United States</option>
-                                    <option value="uk">United Kingdom</option>
-                                    <option value="ca">Canada</option>
-                                    <option value="au">Australia</option>
-                                    <option value="de">Germany</option>
-                                    <option value="fr">France</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service">Service Required</label>
-                        <select class="form-control" id="service" name="service">
-                            <option value="">Select a service</option>
-                            <option value="iphone-hacking">iPhone Hacking</option>
-                            <option value="whatsapp-hacking">WhatsApp Hacking</option>
-                            <option value="social-media-recovery">Social Media Recovery</option>
-                            <option value="email-recovery">Email Recovery</option>
-                            <option value="private-investigation">Private Investigation</option>
-                            <option value="cybersecurity">Cybersecurity</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="description">Describe Your Requirements *</label>
-                        <textarea class="form-control" id="description" name="description" rows="5" required placeholder="Please provide detailed information about your requirements, including any specific needs or concerns..."></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="hidden" name="subject" value="Professional Hacking Service Request">
-                        <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you">
-                        <button type="submit" class="btn btn-primary w-100">
-                            <i data-lucide="send" class="me-2"></i>
-                            Submit Request
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Emergency Contact -->
-    <section class="section-padding" style="background: var(--bg-dark); color: white;">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold mb-4">🚨 Need Immediate Assistance?</h2>
-                    <p class="lead mb-4">For urgent hacking services or emergency cybersecurity support, contact us directly via WhatsApp for immediate response from our certified ethical hackers.</p>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <div class="card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
-                                <div class="card-body">
-                                    <h5 style="color: var(--accent-color);">📱 WhatsApp</h5>
-                                    <p class="h4" style="color: white;">+44 7355 835912</p>
-                                    <small style="color: rgba(255,255,255,0.8);">Available 24/7 for Emergency Support</small>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
